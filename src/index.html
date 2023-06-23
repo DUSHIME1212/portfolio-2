@@ -4,43 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://kit.fontawesome.com/c1666830fc.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <nav class="flex flex-row justify-between ">
+<body class=" bg-black text-white">
+    <nav class="flex bg-black text-white flex-row justify-between ">
         <div class="w-2/3 grid grid-cols-3">
-            <div class="px-2">Home page</div>
-            <div class="px-2">Portfolio</div>
-            <div class="px-2">Category</div>
+            <div class="px-2 flex text-start rounded-full border border-white">Home page</div>
+            <div class="px-2 flex text-start rounded-full border border-white">Portfolio</div>
+            <div class="px-2 flex text-start rounded-full border border-white">Category</div>
         </div>
         <ul class="flex gap-3">
-            <li class="rounded-full border-2 border-solid "><i class="fa-brands fa-facebook"></i></li>
-            <li class="rounded-full border-2 border-solid "><i class="fa-brands fa-facebook"></i></li>
-            <li class="rounded-full border-2 border-solid "><i class="fa-brands fa-facebook"></i></li>
+            <li class="rounded-full p-2 border-2"><i class="fa-brands fa-facebook"></i></li>
+            <li class="rounded-full p-2 border-2"><i class="fa-brands fa-twitter"></i></li>
+            <li class="rounded-full p-2 border-2"><i class="fa-brands fa-instagram"></i></li>
         </ul>
     </nav>
-    <section>
-        <div>
-            <h1>Nicolas Simons —</h1>
+    <section class="p-1">
+        <div class="w-full p-20 flex align-middle justify-between" style="background-color: #839292;">
             <div>
+                <h1 class="text-5xl font-bold">Nicolas Simons —</h1>
                 <div>supporting manager<i class="fa-regular fa-arrow-right"></i></div>
                 <p>Art Director — MetroLab</p>
             </div>
             <div>
-                <img src="" alt="">
-                <button>Send donation</button>
+                <img class="rounded-full" style="width: 50px; height: 50px; background-size: cover;" src="/images/v1_44.png" alt="">
+                <button class="rounded-full border border-white py-2">Send donation</button>
             </div>
         </div>
-        <div>
-            <div>
-                <h2></h2>
-                <h2></h2>
-                <h2></h2>
+        <div class="flex w-full">
+            <div class="w-1/2 flex gap-8 ">
+                <h2>ART DIRECTOR</h2>
+                <h2>12 DECEMBER 2022</h2>
+                <h2>PORTFOLIO</h2>
             </div>
-            <p>MetroLab / 2023© creates interesting website dashboard design 
+            <p class="w-1/2">MetroLab / 2023© creates interesting website dashboard design 
                 for company artists and photographers.
             </p>
         </div>
+    </section>
+    <section class="flex flex-wrap flex-row">
+        <div class="flex flex-col leading-8 w-1/3 p-10">
+            <h1 class="flex justify-between">LATEST POST<i class="fa-solid fa-circle-right"></i></h1>
+            <img src="" alt="">
+            <div class="flex text-22 font-semibold justify-between">
+                <h1>Design Generate</h1> 
+                <h1 class="">45k views</h1>
+            </div>
+            <img src="/images/v1_65.png" style="height: 20px; width: auto; background-size: cover;" alt="">
+            <p>Testing popular designing tools and evaluating
+                 them with MetroLab crew and artists.
+            </p>
+        </div>
+        <div class="flex flex-col bg-yellow-300 rounded-3xl h-72 leading-8 w-1/3 p-10">
+            <h1 class="flex justify-between">LATEST POST<i class="fa-solid fa-circle-right"></i></h1>
+            <div class="flex justify-between font-semibold">
+                <h1>Training new participants</h1> 
+                <h1 class="font-black text-6xl">38.2</h1>
+            </div>
+        </div>
+        <div class="flex bg-purple-600 rounded-3xl flex-col h-72 leading-8 w-1/3 p-10">
+            <h1 class="flex justify-between">LATEST POST<i class="fa-solid fa-circle-right"></i></h1>
+            <div class="flex justify-between">
+                <h1 class="font-black text-6xl">User Interface Benefits</h1>
+                <i class="fas fa-signal-bars"></i>
+            </div>
+        </div>        
     </section>
 </body>
 </html>
