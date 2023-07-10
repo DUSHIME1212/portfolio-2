@@ -4,41 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://kit.fontawesome.com/c1666830fc.js" crossorigin="anonymous"></script>
 </head>
 <body class=" bg-black text-white">
     <nav class="flex bg-black text-white flex-row justify-between ">
-        <div class="w-2/3 grid grid-cols-3">
-            <div class="px-2 flex text-start rounded-full border border-white">Home page</div>
-            <div class="px-2 flex text-start rounded-full border border-white">Portfolio</div>
-            <div class="px-2 flex text-start rounded-full border border-white">Category</div>
+        <div class="w-2/3 gap-2 grid grid-cols-3">
+            <div class="px-4 grid content-center text-start rounded-full border hover:bg-slate-200 hover:text-black  border-white">Home page</div>
+            <div class="px-4 grid content-center text-start rounded-full border hover:bg-slate-200 hover:text-black  border-white">Portfolio</div>
+            <div class="px-4 grid content-center text-start rounded-full border hover:bg-slate-200 hover:text-black  border-white">Category</div>
         </div>
         <ul class="flex gap-3">
-            <li class="rounded-full p-2 border-2"><i class="fa-brands fa-facebook"></i></li>
-            <li class="rounded-full p-2 border-2"><i class="fa-brands fa-twitter"></i></li>
-            <li class="rounded-full p-2 border-2"><i class="fa-brands fa-instagram"></i></li>
+            <li class="rounded-full w-10 h-10 grid content-center justify-center align-middle hover:bg-slate-200 hover:text-black p-2 border-2"><i class="fa-brands fa-facebook"></i></li>
+            <li class="rounded-full w-10 h-10 grid content-center justify-center align-middle hover:bg-slate-200 hover:text-black p-2 border-2"><i class="fa-brands fa-twitter"></i></li>
+            <li class="rounded-full w-10 h-10 grid content-center justify-center align-middle hover:bg-slate-200 hover:text-black p-2 border-2"><i class="fa-brands fa-instagram"></i></li>
         </ul>
     </nav>
-    <section class="p-1">
+    <section id="myDiv" class="p-1">
         <div class="w-full p-20 flex align-middle justify-between" style="background-color: #839292;">
             <div>
                 <h1 class="text-5xl font-bold">Nicolas Simons —</h1>
                 <div>supporting manager<i class="fa-regular fa-arrow-right"></i></div>
                 <p>Art Director — MetroLab</p>
             </div>
-            <div>
-                <img class="rounded-full" style="width: 50px; height: 50px; background-size: cover;" src="/images/v1_44.png" alt="">
-                <button class="rounded-full border border-white py-2">Send donation</button>
+            <div class="grid content-center items-center relative">
+                <img class="rounded-full inset-0 flex items-center justify-center" style="width: 50px; height: 50px; background-size: cover;" src="/images/v1_44.png" alt="">
+                <button class="rounded-full border hover:bg-slate-200 hover:text-black border-white px-4 grid content-center">Send donation</button>
             </div>
         </div>
-        <div class="flex w-full">
-            <div class="w-1/2 flex gap-8 ">
-                <h2>ART DIRECTOR</h2>
-                <h2>12 DECEMBER 2022</h2>
-                <h2>PORTFOLIO</h2>
+        <div class="flex align-middle justify-between w-full">
+            <div class="sm:flex-co flex gap-4 rounded-full border border-white p-1">
+                <h2 class="rounded-full border hover:bg-slate-200 hover:text-black border-white px-4 py-0 grid content-center">ART DIRECTOR</h2>
+                <h2 class="rounded-full border hover:bg-slate-200 hover:text-black border-white px-4 py-0 grid content-center">12 DECEMBER 2022</h2>
+                <h2 class="rounded-full border hover:bg-slate-200 hover:text-black border-white px-4 py-0 grid content-center">PORTFOLIO</h2>
             </div>
-            <p class="w-1/2">MetroLab / 2023© creates interesting website dashboard design 
+            <p class="">MetroLab / 2023© creates interesting website dashboard design 
                 for company artists and photographers.
             </p>
         </div>
@@ -51,7 +52,9 @@
                 <h1>Design Generate</h1> 
                 <h1 class="">45k views</h1>
             </div>
-            <img src="/images/v1_65.png" style="height: 20px; width: auto; background-size: cover;" alt="">
+            <div id="zoom" class="h-10 container relative">
+                <img src="/images/v1_65.png" class="w-full h-full object-cover" alt="">
+              </div>              
             <p>Testing popular designing tools and evaluating
                  them with MetroLab crew and artists.
             </p>
@@ -71,5 +74,8 @@
             </div>
         </div>        
     </section>
+    <script src="https://unpkg.com/framer-motion@latest/dist/framer-motion.umd.js"></script>
+    <script src="/src/app.js"></script>
+    
 </body>
 </html>
